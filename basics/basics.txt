@@ -1,0 +1,16 @@
+#!/bin/bash
+ls [-l] [file]
+pwd
+date
+rm
+cp
+mv
+
+-rw-rw-r-- Owner perm, Group perm, others perm
+chmod a+x [file] all +x
+chmod u+x [file] owner +x
+chmod g+x [file] group +x
+chmod o+x [file] group +x
+
+chmod nnn [file] n=number 4=read, 2=write, 1=execute, 7 max perm
+chmod 400 [file] Read perm only for owner
