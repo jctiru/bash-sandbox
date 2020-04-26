@@ -1,0 +1,19 @@
+let
+(())
+[]
+expr
+bc # Floating point
+
+# let
+No $ and no space
+ex: let RESULT=NUMBER+ANOTHER_NUMBER
+let NUMBER++
+let NUMBER--
+let NUMBER+=5
+let NUMBER-=5
+
+# expr
+Space around math operand
+Use $ and with space
+ex: RESULT=$(expr $NUMBER + 5)
+ex: RESULT=`expr $NUMBER + 5`
