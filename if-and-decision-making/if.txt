@@ -39,3 +39,18 @@ Mandatory use of [[]]
 
 [[ $STR1 == string-with-wildcards ]]
 [[ $STR1 =~ $regex ]]
+
+~~~~~~~~~~~~~
+
+Wildcards (globbing patterns)
+? Single char
+* Any number of char
+[] Single char from range
+{} Comma separated terms
+[!] Any char not listed in bracket
+[:upper:]
+[:lower:]
+[:alpha:]
+[:digit:]
+[:alnum:]
+[:space:]
