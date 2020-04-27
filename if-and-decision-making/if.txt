@@ -8,6 +8,8 @@ else
   ...
 fi
 
+~~~~~~~~~~~~~
+
 Mathematical comparison
 -eq ==
 -ne !=
@@ -15,3 +17,25 @@ Mathematical comparison
 -lt <
 -ge >=
 -le <=
+
+~~~~~~~~~~~~~
+
+String Comparision
+Example:
+[ "$STR1" = "$STR2" ]
+[ "$STR1" != "hello" ]
+If STR1 or STR2 are not defined or empty, we would get error message: Unary operator expected when not using "" (double quotes)
+
+Bash can handle another way using [[]]. Can still use "" (double quotes). Not widely used.
+Example:
+[[ $STR1 = $STR2 ]]
+
+[ -z "$STR1" ] Test if STR1 is empty string
+[ -n "$STR1" ] Test if STR1 holds non-empty string
+
+Alphabetically compare two strings
+Mandatory use of [[]]
+[[ $STR1 > $STR2 ]]
+
+[[ $STR1 == string-with-wildcards ]]
+[[ $STR1 =~ $regex ]]
