@@ -1,0 +1,19 @@
+Redirection
+Every program run on the command line automatically has 3 data streams
+-STDIN(0) - Standard input (data provided to program)
+-STDOUT(1) - Standard output (what program prints, defaults to terminal)
+-STDERR(2) - Standard error (what error msgs program prints, defaults to terminal)
+
+Example
+cat in.txt > out.txt
+cat in.txt 1> out.txt
+cat in.txt 2> errors.txt
+cat in.txt 1> out.txt 2> errors.txt
+cat in.txt &> out.txt
+cat in.txt 1> out.txt 2> &1
+> Rewrite
+>> Concat
+
+Piping
+Sending data from one program to another
+cat file.txt | head -5 | tail -3 | wc -l
