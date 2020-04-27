@@ -1,0 +1,17 @@
+if [ condition ]; then
+  ...
+elif [ ! condition ] && ! [ condition ]; then
+  ...
+elif [ condition ] || [ condition ]; then
+  ...
+else
+  ...
+fi
+
+Mathematical comparison
+-eq ==
+-ne !=
+-gt >
+-lt <
+-ge >=
+-le <=
