@@ -54,3 +54,30 @@ Wildcards (globbing patterns)
 [:digit:]
 [:alnum:]
 [:space:]
+
+~~~~~~~~~~~~~~~
+
+Regular Expressions
+. | Any single char | bo.k | book,bork
+* | Preceding item must match zero or more times | co*l | cl,col,cool
+^ | Start of line marker
+$ | End of line marker
+[] | Any of chars inside bracket | coo[kl] | cook,cool
+[-] | Any char range inside bracket | file[1-3] | file1,file2,file3
+[^] | Any char except inside bracket | file[^01234567] | file8,file9
+? | Preceding item must match one or zero times | colou?r | color,colour NOT colouur
++ | Precieding item must match one or more times | file1+ | file1,file11,file111 NOT file
+{n} | Preceding item must match n times | [0-9]{n} | Any three digit number 111,245,614
+{n,m} | Min and max times Preceding item should match | [0-9]{1,3} | 1,245,23 NOT 1234
+\ | Escape character
+Character classes (use within [])
+[:upper:]
+[:lower:]
+[:alpha:]
+[:digit:]
+[:alnum:]
+[:space:]
+
+REGEX="http://.*\jpg"
+${BASH_REMATCH[0]} part of the string which match regex (http://images.jpg)
+${BASH_REMATCH[1]} part of regex which is enclosed in first parentheses (REGEX="http://(.*)\.jpg" -> images)
