@@ -1,0 +1,11 @@
+Exit Status
+Zero means successful
+Non-zero means failure
+echo $?
+
+Can exit program
+exit 0
+exit 1
+
+Value only 0-255
+Will overflow back to 0
