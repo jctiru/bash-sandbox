@@ -81,3 +81,14 @@ Character classes (use within [])
 REGEX="http://.*\jpg"
 ${BASH_REMATCH[0]} part of the string which match regex (http://images.jpg)
 ${BASH_REMATCH[1]} part of regex which is enclosed in first parentheses (REGEX="http://(.*)\.jpg" -> images)
+
+~~~~~~~~~~~~~~~
+
+Filesystem Related Tests
+[ -e $VAR ] True if var is an existing file (file or dir)
+[ -f $VAR ] True if var is existing regular file
+[ -d $VAR ] True if var is existing dir
+[ -x $VAR ] True if var is an executable file
+[ -L $VAR ] True if var holds path of a symlink
+[ -r $VAR ] True if var is readable file
+[ -w $VAR ] True if var is writable file
