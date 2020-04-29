@@ -1,0 +1,19 @@
+Functions
+
+function_name () {
+  ...
+}
+
+function function_name {
+  ...
+}
+
+function hello {
+  echo hello $1
+  local name=Rex
+  echo "hello $name"
+  return 11
+}
+echo "output from funtion hello: "
+hello Richard
+echo "return value from function hello is: $? "
