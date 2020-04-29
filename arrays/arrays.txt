@@ -1,0 +1,13 @@
+Arrays
+
+Declaration
+ARRAY=(val1 val2 ... valN)
+ARRAY=(1 2 3)
+
+Calling
+${ARRAY[0]} # 1
+${ARRAY[@]} # All items in array
+${ARRAY[*]} # All items in array, delimited by first char of IFS
+${!ARRAY[@]} # All indexes in array (@/*)
+${#ARRAY[@]} # Number of items in the array (@/*)
+${#ARRAY[0]} # Length of item zero
