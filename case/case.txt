@@ -1,0 +1,11 @@
+case "$VAR" 
+  "$condition1")
+    ...
+    ;;
+  "$condition2")
+    ...
+    ;;
+  *)
+    ...
+    ;;
+esac
